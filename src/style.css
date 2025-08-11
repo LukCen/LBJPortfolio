@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-midnight: #00000D;
+  /*main background*/
+  --color-deep-space: #131533;
+  /*component background*/
+
+  --color-deep-space-opaque: rgba(19, 21, 51, 0.5);
+  --color-frost-white: #E6F0F0;
+  /* text + accents*/
+  --color-neon: #00F0FF;
+  /* primary color + cta */
+  --color-warm-amber: #FFB547;
+  /* secondary color */
+
+
+  --breakpoint-desktop: 1200px;
+
+  --animate-wiggle: wiggle .5s ease-in-out infinite;
+  @keyframes wiggle {
+    0%, 100% {
+      transform: rotate(-9deg);
+    }
+    50% {
+      transform: rotate(9deg);
+    }
+  }
+
+}
+
+@layer base {
+  h1 {
+    font-size: 3.815rem;
+  }
+  h2 {
+    font-size: 3.052rem;
+  }
+  h3 {
+    font-size: 2.441rem;
+  }
+  h4 {
+    font-size: 1.953rem;
+  }
+  h5 {
+    font-size: 1.563rem;
+  }
+  h6 {
+    font-size: 1.35rem;
+  }
+  p, span, a {
+    font-size: 1.1rem;
+  }
+  small {
+    font-size: 0.8rem;
+  }
+}
+
+:root {
+  font-family: Lato, -apple-system, 'BlinkMacSystemFont', 'avenir next', 'avenir', 'segoe ui', 'helvetica neue', 'Adwaita Sans', 'Cantarell', 'Ubuntu', 'roboto', 'noto', helvetica, arial, sans-serif;
+}
