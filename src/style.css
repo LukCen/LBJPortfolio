@@ -6,7 +6,7 @@
   --color-deep-space: #131533;
   /*component background*/
 
-  --color-deep-space-opaque: rgba(19, 21, 51, 0.5);
+  --color-deep-space-opaque: rgba(19, 21, 51, 0.95);
   --color-frost-white: #E6F0F0;
   /* text + accents*/
   --color-neon: #00F0FF;
@@ -30,28 +30,37 @@
 }
 
 @layer base {
+  @media(min-width: theme(--breakpoint-desktop)) {
+    h1 {
+      font-size: 3.815rem;
+    }
+    h2 {
+      font-size: 3.052rem;
+    }
+    h3 {
+      font-size: 2.441rem;
+    }
+    h4 {
+      font-size: 1.953rem;
+    }
+    h5 {
+      font-size: 1.563rem;
+    }
+    h6 {
+      font-size: 1.35rem;
+    }
+    p, span, a {
+      font-size: 1.1rem;
+    }
+    small {
+      font-size: 0.8rem;
+    }
+  }
+
   h1 {
-    font-size: 3.815rem;
-  }
-  h2 {
-    font-size: 3.052rem;
-  }
-  h3 {
-    font-size: 2.441rem;
-  }
-  h4 {
-    font-size: 1.953rem;
-  }
-  h5 {
-    font-size: 1.563rem;
-  }
-  h6 {
-    font-size: 1.35rem;
+    font-size: 2.4rem;
   }
   p, span, a {
-    font-size: 1.1rem;
-  }
-  small {
     font-size: 0.8rem;
   }
 }

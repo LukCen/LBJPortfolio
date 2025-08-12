@@ -42,17 +42,17 @@ console.log(isDesktop.value)
       <ul>
         <li>
           <a href="about-me">
-            <User2Icon class="nav-icon" />About me
+            <User2Icon class="nav-icon" :size="32" />About me
           </a>
         </li>
         <li>
           <a href="experience">
-            <BriefcaseBusinessIcon class="nav-icon" /> Experience
+            <BriefcaseBusinessIcon class="nav-icon" :size="32" /> Experience
           </a>
         </li>
         <li>
           <a href="portfolio">
-            <BookOpenIcon class="nav-icon" /> Portfolio
+            <BookOpenIcon class="nav-icon" :size="32" /> Portfolio
           </a>
         </li>
       </ul>
@@ -71,7 +71,7 @@ nav ul li:hover .nav-icon {
 }
 aside {
   /* top and height offset is calculated based on the icon size */
-  @apply absolute flex flex-col w-full h-[calc(100vh-64px)] bg-deep-space-opaque top-[64px] right-0;
+  @apply absolute flex flex-col w-full h-[calc(100vh-64px)] bg-deep-space-opaque top-[64px] right-0 z-10;
 }
 aside ul {
   @apply flex flex-col gap-10 p-4 h-full;
@@ -81,6 +81,6 @@ aside ul li {
   @apply flex justify-end opacity-100;
 }
 aside ul li a {
-  @apply flex justify-between w-1/2 relative right-0;
+  @apply flex justify-between w-1/2 relative right-0 text-[24px] font-medium;
 }
 </style>
