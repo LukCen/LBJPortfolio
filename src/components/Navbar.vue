@@ -13,7 +13,7 @@ console.log(isDesktop.value)
 </script>
 
 <template>
-  <nav class="min-h-[50px] w-screen bg-deep-space flex justify-between text-frost-white items-center px-4">
+  <nav class="min-h-[50px] w-screen bg-dark flex justify-between text-light items-center px-4 z-10">
     <span class="text-3xl font-bold">Łukasz Cena</span>
     <button v-if="!isDesktop" class="btn-menu-close w-fit self-end" @click="throttleClick">
       <MenuIcon :size="64" v-if="!menuActive" />
@@ -63,7 +63,7 @@ console.log(isDesktop.value)
 @reference "../style.css";
 
 nav ul li a {
-  @apply flex gap-1 w-full font-medium hover:text-neon duration-150
+  @apply flex gap-1 w-full font-medium hover:text-primary duration-150
 }
 
 nav ul li:hover .nav-icon {
@@ -71,7 +71,7 @@ nav ul li:hover .nav-icon {
 }
 aside {
   /* top and height offset is calculated based on the icon size */
-  @apply absolute flex flex-col w-full h-[calc(100vh-64px)] bg-deep-space-opaque top-[64px] right-0 z-10;
+  @apply absolute flex flex-col w-full h-[calc(100vh-64px)] bg-medium top-[64px] right-0 z-10;
 }
 aside ul {
   @apply flex flex-col gap-10 p-4 h-full;

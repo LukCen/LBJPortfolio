@@ -1,2 +1,3 @@
 # Portfolio  
-A portfolio website developed using Vue, meant to serve as my online resume.
+A portfolio website developed using Vue, meant to serve as my online resume.  
+Hosted via Vercel.

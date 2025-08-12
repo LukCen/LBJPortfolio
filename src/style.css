@@ -7,16 +7,26 @@
   /*component background*/
 
   --color-deep-space-opaque: rgba(19, 21, 51, 0.95);
-  --color-frost-white: #E6F0F0;
   /* text + accents*/
-  --color-neon: #00F0FF;
+  --color-frost-white: #E6F0F0;
   /* primary color + cta */
-  --color-warm-amber: #FFB547;
+  --color-neon: #00F0FF;
   /* secondary color */
+  --color-warm-amber: #FFB547;
 
 
+  /* pattern to use */
+  --color-primary: var(--color-neon);
+  --color-secondary: var(--color-warm-amber);
+  --color-light: var(--color-frost-white);
+  --color-dark: var(--color-midnight);
+  --color-medium: var(--color-deep-space);
+  /* shadows */
+  --shadow-primary: 0px 0px 15px var(--color-neon);
+  --shadow-secondary: 0px 0px 15px var(--color-warm-amber);
+  /* breakpoints */
   --breakpoint-desktop: 1200px;
-
+  /* animations */
   --animate-wiggle: wiggle .5s ease-in-out infinite;
   @keyframes wiggle {
     0%, 100% {
@@ -30,6 +40,15 @@
 }
 
 @layer base {
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2.11rem;
+  }
+  p, span, a {
+    font-size: 0.95rem;
+  }
   @media(min-width: theme(--breakpoint-desktop)) {
     h1 {
       font-size: 3.815rem;
@@ -41,13 +60,13 @@
       font-size: 2.441rem;
     }
     h4 {
-      font-size: 1.953rem;
+      font-size: 1.45rem;
     }
     h5 {
-      font-size: 1.563rem;
+      font-size: 1.28rem;
     }
     h6 {
-      font-size: 1.35rem;
+      font-size: 1.1rem;
     }
     p, span, a {
       font-size: 1.1rem;
@@ -57,12 +76,6 @@
     }
   }
 
-  h1 {
-    font-size: 2.4rem;
-  }
-  p, span, a {
-    font-size: 0.8rem;
-  }
 }
 
 :root {

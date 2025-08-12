@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AboutMe from './components/AboutMe.vue';
 import HeroSection from './components/HeroSection.vue';
 import Navbar from './components/Navbar.vue';
 
@@ -7,8 +8,9 @@ import Navbar from './components/Navbar.vue';
 
 <template>
   <Navbar />
-  <main class="flex flex-col gap-10 w-screen desktop:max-w-[1200px] px-4 items-center mx-auto desktop:mt-4">
+  <main class="flex flex-col gap-10 w-screen desktop:max-w-[1200px] px-4 items-center mx-auto desktop:mt-4 mb-2">
     <HeroSection />
+    <AboutMe />
   </main>
 </template>
 
