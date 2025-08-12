@@ -13,7 +13,7 @@ console.log(isDesktop.value)
 </script>
 
 <template>
-  <nav class="min-h-[50px] w-screen bg-dark flex justify-between text-light items-center px-4 z-10">
+  <nav class="min-h-[50px] w-screen bg-medium flex sticky top-0 justify-between text-light items-center px-4 z-10">
     <span class="text-3xl font-bold">Łukasz Cena</span>
     <button v-if="!isDesktop" class="btn-menu-close w-fit self-end" @click="throttleClick">
       <MenuIcon :size="64" v-if="!menuActive" />

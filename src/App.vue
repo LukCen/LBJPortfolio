@@ -8,7 +8,8 @@ import Navbar from './components/Navbar.vue';
 
 <template>
   <Navbar />
-  <main class="flex flex-col gap-10 w-screen desktop:max-w-[1200px] px-4 items-center mx-auto desktop:mt-4 mb-2">
+  <main
+    class="flex flex-col gap-10 w-screen desktop:max-w-[1200px] px-2 desktop:px-4 items-center mx-auto desktop:mt-4 mb-2">
     <HeroSection />
     <AboutMe />
   </main>

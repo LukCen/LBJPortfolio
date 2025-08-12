@@ -1,5 +1,5 @@
 <template>
-  <section aria-label="Information about the website" class="text-primary shadow-primary  rounded-2xl overflow-hidden">
+  <section aria-label="Information about the website" class="text-primary shadow-primary rounded-2xl overflow-hidden">
     <div class="hero-banner relative">
       <picture>
         <source media="(min-width: 1200px)" srcset="/assets/hero_bg_desktop.webp">
