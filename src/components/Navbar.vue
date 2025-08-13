@@ -15,7 +15,8 @@ console.log(isDesktop.value)
 <template>
   <nav class="min-h-[50px] w-screen bg-medium flex sticky top-0 justify-between text-light items-center px-4 z-10">
     <span class="text-3xl font-bold">Łukasz Cena</span>
-    <button v-if="!isDesktop" class="btn-menu-close w-fit self-end" @click="throttleClick">
+    <button :aria-label="!menuActive ? 'Open main menu' : 'Close main menu'" v-if="!isDesktop"
+      class="btn-menu-close w-fit self-end" @click="throttleClick">
       <MenuIcon :size="64" v-if="!menuActive" />
       <XIcon :size="64" v-if="menuActive" />
     </button>
