@@ -62,7 +62,7 @@
 @reference '../style.css';
 
 .tech-stack li {
-  @apply cursor-pointer hover:text-primary duration-150 flex flex-col items-center;
+  @apply cursor-pointer hover:text-secondary duration-150 flex flex-col items-center;
 }
 .tech-stack li:hover img {
   @apply animate-wiggle;
@@ -70,7 +70,6 @@
 .tech-stack li a {
   @apply w-full flex flex-col items-center text-center;
 }
-
 .tech-stack h4 {
   @apply font-semibold text-primary text-shadow-[0px_0px_20px_var(--color-primary)];
 }

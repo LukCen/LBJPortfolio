@@ -10,7 +10,8 @@
   /* text + accents*/
   --color-frost-white: #E6F0F0;
   /* primary color + cta */
-  --color-neon: #00F0FF;
+  --color-neon: #04D9FF;
+  --color-neon-blue: #0C86FF;
   /* secondary color */
   --color-warm-amber: #FFB547;
 
@@ -22,8 +23,8 @@
   --color-dark: var(--color-midnight);
   --color-medium: var(--color-deep-space);
   /* shadows */
-  --shadow-primary: 0px 0px 15px var(--color-neon);
-  --shadow-secondary: 0px 0px 15px var(--color-warm-amber);
+  --shadow-primary: 0px 0px 20px var(--color-neon);
+  --shadow-secondary: 0px 0px 20px var(--color-warm-amber);
   /* breakpoints */
   --breakpoint-desktop: 1200px;
   /* animations */
