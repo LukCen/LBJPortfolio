@@ -1,10 +1,10 @@
 <template>
   <section aria-label="Information about the website"
-    class="text-neon desktop:shadow-primary rounded-2xl overflow-hidden">
+    class="text-primary desktop:shadow-primary rounded-2xl overflow-hidden">
     <div class="hero-banner relative">
       <picture>
         <source media="(min-width: 1200px)" srcset="/assets/hero_bg_desktop.webp">
-        <img class="w-full h-auto border-1 border-dark aspect-[7/16] desktop:aspect-[12/7]"
+        <img fetchpriority="high" class="w-full h-auto border-1 border-dark aspect-[7/16] desktop:aspect-[12/7]"
           src="/assets/hero_bg_mobile.webp" alt="">
       </picture>
       <h1 class="absolute top-0 left-1/2 w-3/4 -translate-x-1/2 ">Łukasz Cena -
@@ -28,6 +28,6 @@
 h1 {
   font-family: Changa, Lato, sans-serif;
   font-weight: 700;
-  text-shadow: 0px 0px 25px var(--color-neon-blue);
+  text-shadow: 0px 0px 25px var(--color-primary-blue);
 }
 </style>
