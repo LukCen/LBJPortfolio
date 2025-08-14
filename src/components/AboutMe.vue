@@ -1,6 +1,6 @@
 <template>
   <section id="about-me" class="w-full bg-medium shadow-primary rounded-xl p-8 text-light" aria-label="About me">
-    <h2 class="text-secondary font-bold">About me</h2>
+    <h2 class="text-secondary text-shadow-[0px_0px_5px_var(--color-secondary)] font-bold">About me</h2>
     <div class="content flex flex-col gap-8">
       <p>I specialize in front-end develoment of websites and web apps, focusing on delivering elegant, scalable and
         performant designs, fully compliant with modern web development practices.</p>

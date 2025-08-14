@@ -13,7 +13,8 @@ console.log(isDesktop.value)
 </script>
 
 <template>
-  <nav class="min-h-[50px] w-screen bg-medium flex sticky top-0 justify-between text-light items-center px-4 z-10">
+  <nav
+    class="min-h-[50px] w-screen bg-medium flex sticky top-0 justify-between shadow-[0px_1px_1px_var(--color-primary)] text-light items-center px-4 z-10">
     <span class="text-3xl font-bold">Łukasz Cena</span>
     <button :aria-label="!menuActive ? 'Open main menu' : 'Close main menu'" v-if="!isDesktop"
       class="btn-menu-close w-fit self-end" @click="throttleClick">

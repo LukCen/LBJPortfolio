@@ -39,7 +39,14 @@
   }
 
 }
-
+@font-face {
+  font-family: Montserrat;
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("TrueType");
+}
+@font-face {
+  font-family: Changa;
+  src: url("/fonts/Changa-VariableFont_wght.ttf") format("TrueType");
+}
 @layer base {
   h1 {
     font-size: 2.4rem;
@@ -80,7 +87,7 @@
 }
 
 :root {
-  font-family: Lato, -apple-system, 'BlinkMacSystemFont', 'avenir next', 'avenir', 'segoe ui', 'helvetica neue', 'Adwaita Sans', 'Cantarell', 'Ubuntu', 'roboto', 'noto', helvetica, arial, sans-serif;
+  font-family: Montserrat, -apple-system, 'BlinkMacSystemFont', 'avenir next', 'avenir', 'segoe ui', 'helvetica neue', 'Adwaita Sans', 'Cantarell', 'Ubuntu', 'roboto', 'noto', helvetica, arial, sans-serif;
   font-display: fallback;
   color: var(--color-light);
 }
