@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useMediaQuery, useThrottleFn } from '@vueuse/core';
-import { BookOpenIcon, BriefcaseBusinessIcon, MenuIcon, User2Icon, XIcon } from 'lucide-vue-next';
+import { BookOpenIcon, BriefcaseBusinessIcon, Mail, MenuIcon, User2Icon, XIcon } from 'lucide-vue-next';
 import { ref } from 'vue';
 
 const menuActive = ref(false)
@@ -29,15 +29,13 @@ console.log(isDesktop.value)
         </a>
       </li>
       <li>
-        <a href="#experience">
-          <BriefcaseBusinessIcon class="nav-icon" /> Experience
-        </a>
-      </li>
-      <li>
         <a href="#portfolio">
           <BookOpenIcon class="nav-icon" /> Portfolio
         </a>
       </li>
+      <li><a href="#contact">
+          <Mail class="nav-icon" /> Contact
+        </a></li>
     </ul>
     <!-- mobile -->
     <aside v-if="menuActive && !isDesktop">
@@ -57,6 +55,9 @@ console.log(isDesktop.value)
             <BookOpenIcon class="nav-icon" :size="32" /> Portfolio
           </a>
         </li>
+        <li><a href="#contact">
+            <Mail class="nav-icon" /> Contact
+          </a></li>
       </ul>
     </aside>
   </nav>
