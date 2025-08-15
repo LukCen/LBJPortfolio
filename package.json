@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.11",
     "@vueuse/core": "^13.6.0",
     "lucide-vue-next": "^0.539.0",

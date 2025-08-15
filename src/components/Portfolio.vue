@@ -1,10 +1,11 @@
 <template>
-  <section id="portfolio" class="w-full flex flex-col gap-5 bg-midnight shadow-primary overflow-hidden rounded-xl">
+  <section id="portfolio" class="w-full flex flex-col p-2 gap-5 bg-midnight shadow-primary overflow-hidden rounded-xl">
+    <h2 class="text-secondary text-shadow-[0px_0px_20px_var(--color-secondary)] font-bold">Example projects</h2>
     <div aria-label="Portfolio item - WhisperNews" class="flex flex-col min-h-fit w-fit p-4 gap-4 bg-medium rounded-xl"
       href="">
       <img src="/assets/whispernews_desktop.webp" alt="Screenshot of the project">
       <div class="text_content flex flex-col gap-5">
-        <h2 class="text-secondary font-bold text-shadow-[0px_0px_5px_var(--color-secondary)]">WhisperNews</h2>
+        <h3 class="text-secondary font-bold text-shadow-[0px_0px_5px_var(--color-secondary)]">WhisperNews</h3>
         <p class="description">An example main page for a news website, based on a FrontendMentor challenge. I expanded
           it by adding a footer and additional content section, so it looks more filled.</p>
         <div class="links flex gap-10">

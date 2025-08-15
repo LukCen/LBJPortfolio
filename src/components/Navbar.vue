@@ -24,17 +24,17 @@ console.log(isDesktop.value)
     <!-- desktop -->
     <ul v-if="isDesktop" class="flex gap-10">
       <li>
-        <a href="about-me">
+        <a href="#about-me">
           <User2Icon class="nav-icon" />About me
         </a>
       </li>
       <li>
-        <a href="experience">
+        <a href="#experience">
           <BriefcaseBusinessIcon class="nav-icon" /> Experience
         </a>
       </li>
       <li>
-        <a href="portfolio">
+        <a href="#portfolio">
           <BookOpenIcon class="nav-icon" /> Portfolio
         </a>
       </li>
@@ -43,17 +43,17 @@ console.log(isDesktop.value)
     <aside v-if="menuActive && !isDesktop">
       <ul>
         <li>
-          <a href="about-me">
+          <a href="#about-me" @click="menuActive = false">
             <User2Icon class="nav-icon" :size="32" />About me
           </a>
         </li>
         <li>
-          <a href="experience">
+          <a href="#experience" @click="menuActive = false">
             <BriefcaseBusinessIcon class="nav-icon" :size="32" /> Experience
           </a>
         </li>
         <li>
-          <a href="portfolio">
+          <a href="#portfolio" @click="menuActive = false">
             <BookOpenIcon class="nav-icon" :size="32" /> Portfolio
           </a>
         </li>
