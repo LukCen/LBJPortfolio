@@ -70,5 +70,3 @@ async function sendEmail() {
     </form>
   </section>
 </template>
-
-<style scoped></style>
