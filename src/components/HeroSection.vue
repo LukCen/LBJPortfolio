@@ -4,7 +4,7 @@
     <div class="hero-banner relative">
       <picture>
         <source media="(min-width: 1200px)" srcset="/assets/hero_bg_desktop.webp">
-        <img fetchpriority="high"
+        <img loading="eager" fetchpriority="high"
           class="w-full h-auto border-1 border-dark aspect-[7/16] desktop:aspect-[12/7] min-h-[857px] desktop:min-h-[700px]"
           src="/assets/hero_bg_mobile.webp" alt="">
       </picture>
@@ -27,7 +27,7 @@
 </template>
 <style scoped>
 h1 {
-  font-family: Changa, Lato, sans-serif;
+  font-family: Changa, Montserrat, sans-serif;
   font-weight: 700;
   text-shadow: 0px 0px 25px var(--color-primary-blue);
 }
