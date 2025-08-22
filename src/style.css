@@ -29,14 +29,14 @@
   --color-neon-blue: #0C86FF;
   /* secondary color */
   --color-warm-amber: #FFB547;
-
-
+  --color-superlight: rgba(255, 255, 255, 0.4);
   /* pattern to use */
   --color-primary: var(--color-neon);
   --color-secondary: var(--color-warm-amber);
   --color-light: var(--color-frost-white);
   --color-dark: var(--color-midnight);
   --color-medium: var(--color-deep-space);
+  --color-subtle: var(--color-superlight);
   /* shadows */
   --shadow-primary: 0px 0px 20px var(--color-neon);
   --shadow-secondary: 0px 0px 20px var(--color-warm-amber);

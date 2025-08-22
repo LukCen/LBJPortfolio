@@ -37,7 +37,7 @@ async function sendEmail() {
 
 <template>
   <section id="contact" class="flex flex-col gap-5 bg-medium p-4 w-full rounded-xl shadow-primary">
-    <h2 class="text-secondary font-bold text-shadow-[0px_0px_20px_var(--color-secondary)]">Contact</h2>
+    <h2 class="section_header text-secondary font-bold text-shadow-[0px_0px_20px_var(--color-secondary)]">Contact</h2>
     <form @submit.prevent="sendEmail" class="flex flex-col gap-5">
       <!-- client email -->
       <div class="form-block flex gap-5 border-1 border-[rgba(255,255,255,0.4)] bg-dark px-4 py-4 rounded-md">
