@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import './style.css'
 import AboutMe from './components/AboutMe.vue';
 import ContactMe from './components/ContactMe.vue';
 import HeroSection from './components/HeroSection.vue';
