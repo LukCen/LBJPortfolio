@@ -8,21 +8,21 @@
         <h3>Main tech stack I use :</h3>
         <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-5 w-full justify-around">
           <li><a target="_blank" href="https://vuejs.org/">
-              <img width="48" src="/icons/vue-js.svg" alt="Vue.js official logo">
+              <img width="48" src="/icons/vue-js.svg" alt="Vue.js official logo" loading="eager">
               <h4>Vue.js</h4>
               <span>Front-end implementation</span>
             </a>
           </li>
           <li><a target="_blank" href="https://vite.dev/">
-              <img width="48" src="/icons/vite.svg" alt="Vite official logo">
+              <img width="48" src="/icons/vite.svg" alt="Vite official logo" loading="eager">
               <h4>Vite</h4><span>Build tool & bundler</span>
             </a></li>
           <li><a target="_blank" href="https://www.typescriptlang.org/">
-              <img width="48" src="/icons/typescript.svg" alt="TypeScript official logo">
+              <img width="48" src="/icons/typescript.svg" alt="TypeScript official logo" loading="eager">
               <h4>TypeScript</h4><span>Type checking and error prevention</span>
             </a></li>
           <li><a target="_blank" href="https://tailwindcss.com/">
-              <img width="48" src="/icons/tailwindcss.svg" alt="Tailwind official logo">
+              <img width="48" src="/icons/tailwindcss.svg" alt="Tailwind official logo" loading="eager">
               <h4>Tailwind CSS</h4>
               <span>Quick and modular CSS styling</span>
             </a></li>
@@ -31,21 +31,21 @@
         <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-3 desktop:grid-rows-1 gap-5 w-full justify-around">
           <li>
             <a target="_blank" href="https://nodejs.org/">
-              <img src="/icons/nodejs.svg" width="48" alt="Node.js official logo">
+              <img src="/icons/nodejs.svg" width="48" alt="Node.js official logo" loading="eager">
               <h4>Node.js</h4>
               <span>Backend integrations and features</span>
             </a>
           </li>
           <li>
             <a target="_blank" href="https://vercel.com">
-              <img src="/icons/vercel.webp" alt="Vercel official logo">
+              <img src="/icons/vercel.webp" alt="Vercel official logo" loading="eager">
               <h4>Vercel</h4>
               <span>Hosting</span>
             </a>
           </li>
           <li>
             <a target="_blank" href="https://github.com">
-              <img src="/icons/github.svg" alt="">
+              <img src="/icons/github.svg" alt="" loading="eager">
               <h4>GitHub</h4>
               <span>Version control</span>
             </a>

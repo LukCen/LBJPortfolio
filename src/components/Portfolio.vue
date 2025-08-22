@@ -11,7 +11,7 @@ const isDesktop = useMediaQuery('(min-width: 1200px)')
       <div aria-label="Portfolio item - WhisperNews"
         class="flex flex-col min-h-fit w-fit p-4 gap-4 bg-dark rounded-xl border-1 border-superlight" href=""
         v-for="item in projectList">
-        <img :src="isDesktop ? item.imgDesktop : item.img" alt="Screenshot of the project">
+        <img :src="isDesktop ? item.imgDesktop : item.img" alt="Screenshot of the project" loading="lazy">
         <div class="text_content flex flex-col gap-5 h-full">
           <h3 class="text-secondary font-bold text-shadow-[0px_0px_5px_var(--color-secondary)]">{{ item.title }}</h3>
           <p class="description">{{ item.desc }}</p>
