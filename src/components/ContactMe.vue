@@ -36,27 +36,31 @@ async function sendEmail() {
 </script>
 
 <template>
-  <section id="contact" class="flex flex-col gap-5 bg-medium p-4 w-full rounded-xl">
+  <section id="contact" class="flex flex-col gap-5 bg-medium p-4 w-full rounded-xl shadow-primary">
     <h2 class="text-secondary font-bold text-shadow-[0px_0px_20px_var(--color-secondary)]">Contact</h2>
     <form @submit.prevent="sendEmail" class="flex flex-col gap-5">
       <!-- client email -->
-      <div class="form-block flex gap-5 border-1 bg-dark px-4 py-4 border-primary rounded-md">
+      <div class="form-block flex gap-5 border-1 border-[rgba(255,255,255,0.4)] bg-dark px-4 py-4 rounded-md">
         <label class="min-w-[100px] text-center flex justify-center items-center font-semibold" for="contact-email">Your
           e-mail</label>
-        <input required v-model="email" class="w-full p-2 min-h-[40px] rounded-lg bg-medium" id="contact-email"
-          type="email">
+        <input required placeholder="youremail@domain.com" v-model="email"
+          class="w-full p-2 min-h-[40px] rounded-lg bg-medium border-1 border-[rgba(255,255,255,0.2)]"
+          id="contact-email" type="email">
       </div>
       <!-- title -->
-      <div class="form-block flex gap-5 border-1 bg-dark px-4 py-4 border-primary rounded-md">
-        <label class="min-w-[100px] text-center flex justify-center items-center font-semibold"
-          for="contact-title">E-mail title</label>
-        <input required v-model="title" class="w-full p-2 min-h-[40px] rounded-lg bg-medium" id="contact-title"
-          type="text">
+      <div class="form-block flex gap-5 border-1 border-[rgba(255,255,255,0.4)] bg-dark px-4 py-4 rounded-md">
+        <label class="min-w-[100px] flex justify-start items-center font-semibold" for="contact-title">Title</label>
+        <input require placeholder="Your email title" v-model="title"
+          class="w-full p-2 min-h-[40px] rounded-lg bg-medium border-1 border-[rgba(255,255,255,0.2)]"
+          id="contact-title" type="text">
       </div>
       <!-- message -->
-      <div class="form-block flex flex-col gap-5 border-1 border-primary rounded-md bg-dark px-4 py-6">
+      <div class="form-block flex flex-col gap-5 border-1 border-[rgba(255,255,255,0.4)] rounded-md bg-dark px-4 py-6">
         <label for="contact-contents" class="font-semibold">Message</label>
-        <textarea required v-model="content" id="contact-contents" class="w-full p-4 min-h-[40px] rounded-xl bg-medium"
+        <textarea required minlength="10"
+          placeholder="Type in your message here - minimum of 10 characters is required." v-model="content"
+          id="contact-contents"
+          class="w-full p-4 min-h-[40px] rounded-xl bg-medium border-1 border-[rgba(255,255,255,0.2)]"
           rows="20"></textarea>
       </div>
       <!-- submit -->
