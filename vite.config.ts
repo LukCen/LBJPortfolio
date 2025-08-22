@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [vue(), tailwindcss(), beasties({
     options: {
       preload: 'swap',
-      pruneSource: true,
+      pruneSource: false,
       inlineThreshold: 4000
     },
     filter: path => path.endsWith('.html')
