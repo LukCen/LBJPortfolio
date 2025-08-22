@@ -49,7 +49,7 @@ async function sendEmail() {
       <!-- title -->
       <div class="form-block flex gap-5 border-1 bg-dark px-4 py-4 border-primary rounded-md">
         <label class="min-w-[100px] text-center flex justify-center items-center font-semibold"
-          for="contact-title">Title</label>
+          for="contact-title">E-mail title</label>
         <input required v-model="title" class="w-full p-2 min-h-[40px] rounded-lg bg-medium" id="contact-title"
           type="text">
       </div>
