@@ -15,17 +15,16 @@
 }
 
 @theme {
-  --color-midnight: #00000D;
+  --color-midnight: #222;
   /*main background*/
-  --color-deep-space: #131533;
+  --color-deep-space: #0d0d0d;
   /*component background*/
 
   --color-deep-space-opaque: rgba(19, 21, 51, 0.95);
   /* text + accents*/
   --color-frost-white: #E6F0F0;
   /* primary color + cta */
-  --color-neon: #04D9FF;
-  --color-neon-blue: #0C86FF;
+  --color-neon: #f5f5f5;
   /* secondary color */
   --color-warm-amber: #FFB547;
   --color-superlight: rgba(255, 255, 255, 0.4);
