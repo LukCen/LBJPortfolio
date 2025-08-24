@@ -8,8 +8,7 @@ import hero2k from "/assets/hero-tablet.webp"
 </script>
 
 <template>
-  <section aria-label="Information about the website"
-    class="w-screen text-primary desktop:shadow-primary overflow-hidden mt-4">
+  <section aria-label="Information about the website" class="w-screen text-primary overflow-hidden">
     <div class="hero-banner relative">
       <picture>
         <source media="(min-width: 1921px)" :srcset="hero2k" />
@@ -38,5 +37,8 @@ h1 {
   font-family: Changa, Montserrat, sans-serif;
   font-weight: 700;
   text-shadow: 0px 0px 25px var(--color-primary-blue);
+}
+section {
+  box-shadow: 0px 10px 15px -4px var(--color-subtle)
 }
 </style>
