@@ -1,25 +1,20 @@
 <script setup lang="ts">
-import { useIntersectionObserver, useMediaQuery } from '@vueuse/core';
+import { useMediaQuery } from '@vueuse/core';
 import { projectList } from '../data/projects';
-import { shallowRef, useTemplateRef } from 'vue';
 const isDesktop = useMediaQuery('(min-width: 1200px)')
-const target = useTemplateRef<HTMLDivElement>('target')
-const targetVisible = shallowRef(false)
 
-useIntersectionObserver(target, ([entry]) => {
-  targetVisible.value = entry?.isIntersecting || false
-})
 
 </script>
 <template>
-  <section id="portfolio" class="w-full flex flex-col p-8 gap-5 shadow-primary bg-medium overflow-hidden rounded-xl">
+  <section id="portfolio"
+    class="w-full flex flex-col p-4 desktop:p-8 gap-2 desktop:gap-5 shadow-primary bg-medium overflow-hidden rounded-xl">
     <h2 class="section_header text-secondary text-shadow-[0px_0px_5px_var(--color-secondary)] font-bold">Example
       projects</h2>
-    <div ref="target" class="portfolio-items flex flex-col desktop:flex-row gap-10 scale-0 duration-500"
-      :class="{ 'scale-100': targetVisible === true }">
+    <div class="portfolio-items flex flex-col desktop:flex-row gap-10">
+      <!-- individual item generated via a v-for -->
       <div aria-label="Portfolio item - WhisperNews"
         class="portfolio_item flex flex-col min-h-fit w-fit p-4 gap-4 bg-dark rounded-xl border-1 border-superlight"
-        href="" v-for="item in projectList">
+        href="" v-for="item, i in projectList" :key="i">
         <img :src="isDesktop ? item.imgDesktop : item.img" alt="Screenshot of the project" loading="lazy">
         <div class="text_content flex flex-col gap-5 h-full">
           <h3 class="text-secondary font-bold text-shadow-[0px_0px_5px_var(--color-secondary)]">{{ item.title }}</h3>
