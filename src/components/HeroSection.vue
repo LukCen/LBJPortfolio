@@ -5,6 +5,7 @@ import hero from "/assets/hero-mobile.webp"
 import heroTablet from "/assets/hero-tablet.webp"
 import heroDesktop from "/assets/hero-desktop.webp"
 import hero2k from "/assets/hero-tablet.webp"
+
 </script>
 
 <template>
