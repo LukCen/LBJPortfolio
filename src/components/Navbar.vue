@@ -22,7 +22,7 @@ console.log(isDesktop.value)
       <XIcon :size="64" v-if="menuActive" />
     </button>
     <!-- desktop -->
-    <ul v-if="isDesktop" class="flex gap-10">
+    <ul v-if="isDesktop" class="flex relative right-5 gap-10">
       <li>
         <a href="#about-me">
           <User2Icon class="nav-icon" />About me
@@ -66,7 +66,7 @@ console.log(isDesktop.value)
 @reference "../style.css";
 
 nav ul li a {
-  @apply flex gap-1 w-full font-medium hover:text-primary duration-150
+  @apply flex gap-1 w-full font-medium hover:text-secondary duration-150
 }
 
 nav ul li:hover .nav-icon {

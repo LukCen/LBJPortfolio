@@ -28,7 +28,7 @@
             </a></li>
         </ul>
         <h3>Additional tools :</h3>
-        <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-3 desktop:grid-rows-1 gap-5 w-full justify-around">
+        <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-5 w-full justify-around">
           <li>
             <a target="_blank" href="https://nodejs.org/">
               <img src="/icons/nodejs.svg" width="48" alt="Node.js official logo" loading="eager">
@@ -40,7 +40,7 @@
             <a target="_blank" href="https://vercel.com">
               <img src="/icons/vercel.webp" alt="Vercel official logo" loading="eager">
               <h4>Vercel</h4>
-              <span>Hosting</span>
+              <span>Hosting and deployment</span>
             </a>
           </li>
           <li>
@@ -48,6 +48,13 @@
               <img src="/icons/github.svg" alt="" loading="eager">
               <h4>GitHub</h4>
               <span>Version control</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.figma.com/">
+              <img src="/icons/figma.svg" alt="">
+              <h4>Figma</h4>
+              <span>Prototyping and basic asset editing</span>
             </a>
           </li>
         </ul>

@@ -18,9 +18,9 @@ const isDesktop = useMediaQuery('(min-width: 1200px)')
         </div>
         <div class="links flex gap-4 desktop:gap-8">
           <a class="px-2 desktop:px-6 py-2 w-1/2  flex justify-center items-center bg-secondary font-bold text-medium hover:shadow-secondary duration-150 rounded-md"
-            :href="String(item.url)">Check the repo</a>
+            :href="String(item.repo)">Check the repo</a>
           <a class="px-2 desktop:px-6 py-2 w-1/2 flex justify-center items-center bg-primary font-bold text-medium hover:shadow-primary duration-150 rounded-md"
-            :href="String(item.repo)">See in
+            :href="String(item.url)">See in
             action</a>
         </div>
       </div>
