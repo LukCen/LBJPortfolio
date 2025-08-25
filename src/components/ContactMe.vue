@@ -4,18 +4,20 @@ const service = import.meta.env.VITE_MAILJS_SERVICE_ID
 const template = import.meta.env.VITE_MAILJS_TEMPLATE_ID
 import emailjs from "@emailjs/browser"
 import { Loader2 } from "lucide-vue-next";
-import { ref } from "vue";
+import { nextTick, ref, useTemplateRef } from "vue";
 
 const isSending = ref(false) // track if the email is in process of being sent
 const isSuccessful = ref(false) // track if email was sent successfully
 const title = ref('')
 const email = ref('')
 const content = ref('')
+const mailSuccessful = useTemplateRef<HTMLSpanElement | null>('mailSuccessful')
 
+// controls email sending via EmailJS API
 async function sendEmail() {
   try {
     isSending.value = true
-    const result = await emailjs.send(
+    await emailjs.send(
       service, template,
       {
         name: email.value,
@@ -25,10 +27,12 @@ async function sendEmail() {
       },
       mail_key
     )
-
     isSending.value = false
     isSuccessful.value = true
-    console.log('Mail sent successfully ' + result.text)
+    // scrolls down to the 'email sent successfully' after isSuccessful switches value
+    nextTick(() => {
+      mailSuccessful.value?.scrollIntoView({ behavior: "smooth", block: "start" })
+    })
   } catch (e) {
     console.error(e)
   }
@@ -43,14 +47,14 @@ async function sendEmail() {
       <div class="form-block flex gap-5 border-1 border-[rgba(255,255,255,0.4)] bg-dark px-4 py-4 rounded-md">
         <label class="min-w-[100px] text-center flex justify-center items-center font-semibold" for="contact-email">Your
           e-mail</label>
-        <input required placeholder="youremail@domain.com" v-model="email"
+        <input required placeholder="Type in your e-mail here, so I can get back to you!" v-model="email"
           class="w-full p-2 min-h-[40px] rounded-lg bg-medium border-1 border-[rgba(255,255,255,0.2)]"
           id="contact-email" type="email">
       </div>
       <!-- title -->
       <div class="form-block flex gap-5 border-1 border-[rgba(255,255,255,0.4)] bg-dark px-4 py-4 rounded-md">
         <label class="min-w-[100px] flex justify-start items-center font-semibold" for="contact-title">Title</label>
-        <input require placeholder="Your email title" v-model="title"
+        <input require placeholder="Your email title." v-model="title"
           class="w-full p-2 min-h-[40px] rounded-lg bg-medium border-1 border-[rgba(255,255,255,0.2)]"
           id="contact-title" type="text">
       </div>
@@ -61,7 +65,7 @@ async function sendEmail() {
           placeholder="Type in your message here - minimum of 10 characters is required." v-model="content"
           id="contact-contents"
           class="w-full p-4 min-h-[40px] rounded-xl bg-medium border-1 border-[rgba(255,255,255,0.2)]"
-          rows="20"></textarea>
+          rows="10"></textarea>
       </div>
       <!-- submit -->
       <button type="submit"
@@ -69,7 +73,8 @@ async function sendEmail() {
         <Loader2 v-if="isSending" class="animate-spin" color="var(--color-dark)" />
         <span>Send</span>
       </button>
-      <span v-if="isSuccessful" class="font-semibold text-secondary">Your email was sent successfully. Thank you for
+      <span ref="mailSuccessful" v-show="isSuccessful" class="font-semibold text-secondary">Your email was sent
+        successfully. Thank you for
         reaching out!</span>
     </form>
   </section>

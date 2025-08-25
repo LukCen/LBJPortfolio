@@ -3,7 +3,8 @@
     <h2 class="section_header text-secondary text-shadow-[0px_0px_5px_var(--color-secondary)] font-bold">About me</h2>
     <div class="content flex flex-col gap-8">
       <p>I specialize in front-end develoment of websites and web apps, focusing on delivering elegant, scalable and
-        performant designs, fully compliant with modern web development practices.</p>
+        performant designs, fully compliant with modern web development practices. I'm always eager to learn new tools
+        and concepts, from programming to prototyping</p>
       <div class="tech-stack flex flex-col gap-10">
         <h3>Main tech stack I use :</h3>
         <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-5 w-full justify-around">
@@ -15,11 +16,13 @@
           </li>
           <li><a target="_blank" href="https://vite.dev/">
               <img width="48" src="/icons/vite.svg" alt="Vite official logo" loading="eager">
-              <h4>Vite</h4><span>Build tool & bundler</span>
+              <h4>Vite</h4>
+              <span>Build tool & bundler</span>
             </a></li>
           <li><a target="_blank" href="https://www.typescriptlang.org/">
               <img width="48" src="/icons/typescript.svg" alt="TypeScript official logo" loading="eager">
-              <h4>TypeScript</h4><span>Type checking and error prevention</span>
+              <h4>TypeScript</h4>
+              <span>Type checking and error prevention</span>
             </a></li>
           <li><a target="_blank" href="https://tailwindcss.com/">
               <img width="48" src="/icons/tailwindcss.svg" alt="Tailwind official logo" loading="eager">
@@ -38,21 +41,21 @@
           </li>
           <li>
             <a target="_blank" href="https://vercel.com">
-              <img src="/icons/vercel.webp" alt="Vercel official logo" loading="eager">
+              <img width="48" src="/icons/vercel.webp" alt="Vercel official logo" loading="eager">
               <h4>Vercel</h4>
               <span>Hosting and deployment</span>
             </a>
           </li>
           <li>
             <a target="_blank" href="https://github.com">
-              <img src="/icons/github.svg" alt="" loading="eager">
+              <img width="48" src="/icons/github.svg" alt="" loading="eager">
               <h4>GitHub</h4>
               <span>Version control</span>
             </a>
           </li>
           <li>
             <a href="https://www.figma.com/">
-              <img src="/icons/figma.svg" alt="">
+              <img width="48" src="/icons/figma.svg" alt="Figma official logo">
               <h4>Figma</h4>
               <span>Prototyping and basic asset editing</span>
             </a>
