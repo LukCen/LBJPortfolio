@@ -73,7 +73,9 @@ async function sendEmail() {
         <Loader2 v-if="isSending" class="animate-spin" color="var(--color-dark)" />
         <span>Send</span>
       </button>
-      <span ref="mailSuccessful" v-show="isSuccessful" class="font-semibold text-secondary">Your email was sent
+      <span ref="mailSuccessful" v-show="isSuccessful" :class="{ disabled: isSending === true }"
+        class="font-semibold text-secondary" aria-live="polite">Your
+        email was sent
         successfully. Thank you for
         reaching out!</span>
     </form>

@@ -39,7 +39,7 @@
   --shadow-primary: 0px 0px 20px var(--color-neon);
   --shadow-secondary: 0px 0px 20px var(--color-warm-amber);
   /* breakpoints */
-  --breakpoint-tablet: 768px;
+  --breakpoint-tablet: 650px;
   --breakpoint-desktop: 1200px;
   --breakpoint-2k: 1921px;
   /* animations */

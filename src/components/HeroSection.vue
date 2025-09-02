@@ -14,14 +14,14 @@ import hero2k from "/assets/hero-tablet.webp"
       <picture>
         <source media="(min-width: 1921px)" :srcset="hero2k" />
         <source media="(min-width: 1201px) and (max-width: 1920px)" :srcset="heroDesktop">
-        <source media="(min: 650px) and (max-width: 1200px)" :srcset="heroTablet" />
+        <source media="(min-width: 650px) and (max-width: 1200px)" :srcset="heroTablet" />
         <img loading="eager" fetchpriority="high" class="w-full h-auto border-1 border-dark" :src="hero" alt="">
       </picture>
       <div
-        class="text flex flex-col text-center justify-between absolute bottom-0 h-1/2 tablet:justify-around desktop:h-full desktop:top-0 desktop:left-[100px] desktop:max-w-[800px] px-4 py-4 desktop:py-10 desktop:px-0">
-        <h1 class="text-secondary tablet:text-[62px]">Frontend with a passion
+        class="text flex flex-col text-center justify-between absolute bottom-0 h-1/2 tablet:top-0 tablet:h-full tablet:left-0 tablet:w-8/12 tablet:justify-around desktop:h-full desktop:top-0 desktop:left-[100px] desktop:max-w-[800px] px-4 py-4 desktop:py-10 desktop:px-0">
+        <h1 class="text-secondary tablet:text-[42px]">Frontend with a passion
         </h1>
-        <p class="text-[24px] tablet:text-[26px] desktop:text-[38px]">
+        <p class="text-[24px] tablet:text-[22px] desktop:text-[38px]">
           Hey, thanks
           for
           paying me a visit! I'm Łukasz,

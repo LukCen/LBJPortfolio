@@ -1,12 +1,14 @@
 <template>
   <section id="about-me" class="w-full bg-medium shadow-primary rounded-xl p-8 text-light" aria-label="About me">
     <h2 class="section_header text-secondary text-shadow-[0px_0px_5px_var(--color-secondary)] font-bold">About me</h2>
-    <div class="content flex flex-col gap-8">
+    <div class="content flex flex-col gap-4">
       <p>I specialize in front-end develoment of websites and web apps, focusing on delivering elegant, scalable and
         performant designs, fully compliant with modern web development practices. I'm always eager to learn new tools
-        and concepts, from programming to prototyping</p>
+        and concepts, from programming to prototyping, and I'm always looking for ways to write better, cleaner code
+        that is
+        easier to maintain and extend.</p>
       <div class="tech-stack flex flex-col gap-10">
-        <h3>Main tech stack I use :</h3>
+        <h3 class="font-semibold">My tech stack :</h3>
         <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-5 w-full justify-around">
           <li><a target="_blank" href="https://vuejs.org/">
               <img width="48" src="/icons/vue-js.svg" alt="Vue.js official logo" loading="eager">
@@ -30,7 +32,7 @@
               <span>Quick and modular CSS styling</span>
             </a></li>
         </ul>
-        <h3>Additional tools :</h3>
+        <h3 class="font-semibold">Additional tools :</h3>
         <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-5 w-full justify-around">
           <li>
             <a target="_blank" href="https://nodejs.org/">
