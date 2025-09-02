@@ -9,7 +9,6 @@ const throttleClick = useThrottleFn(() => {
     , 150
 })
 const isDesktop = useMediaQuery('(min-width: 1200px)') /* breakpoint declared in style.css */
-console.log(isDesktop.value)
 </script>
 
 <template>

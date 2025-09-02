@@ -11,9 +11,9 @@ export default defineConfig({
     }
   }),
   tailwindcss()],
-  build: {
-    rollupOptions: {
-      treeshake: 'smallest'
-    }
-  }
+  // build: {
+  //   rollupOptions: {
+  //     treeshake: 'smallest'
+  //   }
+  // }
 })

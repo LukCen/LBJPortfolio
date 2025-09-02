@@ -14,7 +14,9 @@ import hero2k from "/assets/hero-tablet.webp"
         <source media="(min-width: 1921px)" :srcset="hero2k" />
         <source media="(min-width: 1200px) and (max-width: 1920px)" :srcset="heroDesktop">
         <source media="(min-width: 650px) and (max-width: 1199px)" :srcset="heroTablet" />
-        <img loading="eager" fetchpriority="high" class="w-full h-auto border-1 border-dark" :src="hero" alt="">
+        <img loading="eager" fetchpriority="high"
+          class="w-full h-auto border-1 border-dark aspect-[400/593] tablet:aspect-[820/224] desktop:aspect-[1920/525] 2k:aspect-[2560/700]"
+          :src="hero" alt="">
       </picture>
       <div
         class="text flex flex-col text-center justify-between absolute bottom-0 h-1/2 tablet:top-0 tablet:h-full tablet:left-0 tablet:w-8/12 tablet:justify-around desktop:h-full desktop:top-0 desktop:left-[100px] desktop:max-w-[800px] px-4 py-4 desktop:py-10 desktop:px-0">
