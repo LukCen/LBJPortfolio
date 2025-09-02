@@ -1,6 +1,4 @@
 <script setup lang="ts">
-// import hero from "/assets/hero_bg_mobile.webp"
-// import heroDesktop from "/assets/hero_bg_desktop.webp"
 import hero from "/assets/hero-mobile.webp"
 import heroTablet from "/assets/hero-tablet.webp"
 import heroDesktop from "/assets/hero-desktop.webp"
@@ -9,7 +7,8 @@ import hero2k from "/assets/hero-tablet.webp"
 </script>
 
 <template>
-  <section aria-label="Information about the website" class="w-screen text-primary overflow-hidden">
+  <section aria-label="Information about the website"
+    class="w-screen min-h-[500px] 2k:min-h-[700px] text-primary overflow-hidden">
     <div class="hero-banner relative">
       <picture>
         <source media="(min-width: 1921px)" :srcset="hero2k" />
