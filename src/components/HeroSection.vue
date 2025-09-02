@@ -9,7 +9,7 @@ import hero2k from "/assets/hero-tablet.webp"
 <template>
   <section aria-label="Information about the website"
     class="w-screen min-h-[500px] 2k:min-h-[700px] text-primary overflow-hidden">
-    <div class="hero-banner relative">
+    <div class="hero-banner h-full relative">
       <picture>
         <source media="(min-width: 1921px)" :srcset="hero2k" />
         <source media="(min-width: 1200px) and (max-width: 1920px)" :srcset="heroDesktop">
