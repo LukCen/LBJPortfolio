@@ -9,8 +9,13 @@
   <meta name="author" content="Łukasz Cena">
   <link rel="preload" href="/fonts/Montserrat-VariableFont_wght.ttf" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/Changa-VariableFont_wght.ttf" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/assets/dark_mosaic.png" as="background-image">
-  <link rel="preload" href="/assets/hero-mobile.webp" as="image">
+  <link rel="preload" href="/assets/dark_mosaic.png" as="image">
+  <!-- PRELOADING HEAD IMAGE -->
+  <link rel="preload" href="/assets/hero-mobile.webp" as="image" media="(max-width: 649px)">
+  <link rel="preload" href="/assets/hero-tablet.webp" as="image" media="(min-width: 650px) and (max-width:1199px)">
+  <link rel="preload" href="/assets/hero-desktop.webp" as="image" media="(min-width: 1200px) and (max-width:1920px)">
+  <link rel="preload" href="/assets/hero-2k.webp" as="image" media="(min-width: 1921px)">
+  <!-- PRELOADING HEAD IMAGE END -->
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon/favicon-16x16.png">
