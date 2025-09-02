@@ -3,6 +3,7 @@ import { useMediaQuery } from '@vueuse/core';
 import { projectList } from '../data/projects';
 const isDesktop = useMediaQuery('(min-width: 1200px)')
 import { register } from 'swiper/element/bundle';
+import { ArrowRightCircleIcon, Code2Icon } from 'lucide-vue-next';
 register()
 </script>
 
@@ -38,11 +39,15 @@ register()
           <p class="description">{{ item.desc }}</p>
         </div>
         <div class="links flex gap-4 desktop:gap-8">
-          <a class="px-2 desktop:px-6 py-2 w-1/2  flex justify-center items-center bg-secondary font-bold text-medium hover:shadow-secondary duration-150 rounded-md"
-            :href="String(item.repo)">Check the repo</a>
-          <a class="px-2 desktop:px-6 py-2 w-1/2 flex justify-center items-center bg-primary font-bold text-medium hover:shadow-primary duration-150 rounded-md"
-            :href="String(item.url)">See in
-            action</a>
+          <a class="px-2 desktop:px-6 py-2 w-1/2 flex gap-2 justify-center items-center bg-secondary font-bold text-medium hover:shadow-secondary duration-150 rounded-md"
+            :href="String(item.repo)"><span>Check the repo</span>
+            <Code2Icon />
+          </a>
+          <a class="px-2 desktop:px-6 py-2 w-1/2 flex gap-2 justify-center items-center bg-primary font-bold text-medium hover:shadow-primary duration-150 rounded-md"
+            :href="String(item.url)"><span>See in
+              action</span>
+            <ArrowRightCircleIcon />
+          </a>
         </div>
       </swiper-slide>
     </swiper-container>
@@ -56,5 +61,9 @@ swiper-container::part(button-next), swiper-container::part(button-prev) {
   padding: 15px;
   border-radius: 50%;
   color: var(--color-dark);
+  transition: transform 150ms;
+}
+swiper-container::part(button-next):hover, swiper-container::part(button-prev):hover {
+  transform: scale(110%);
 }
 </style>
