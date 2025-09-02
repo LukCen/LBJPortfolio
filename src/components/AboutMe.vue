@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import iconVue from "/icons/vue-js.svg"
+import iconVite from "/icons/vite.svg"
+import iconTypescript from "/icons/typescript.svg"
+import iconTailwind from "/icons/tailwindcss.svg"
+import iconNode from "/icons/nodejs.svg"
+import iconVercel from "/icons/vercel.webp"
+import iconGithub from "/icons/github.svg"
+import iconFigma from "/icons/figma.svg"
+
+
+</script>
 <template>
   <section id="about-me" class="w-full bg-medium shadow-primary rounded-xl p-8 text-light" aria-label="About me">
     <h2 class="section_header text-secondary text-shadow-[0px_0px_5px_var(--color-secondary)] font-bold">About me</h2>
@@ -11,23 +23,23 @@
         <h3 class="font-semibold">My tech stack :</h3>
         <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-5 w-full justify-around">
           <li><a target="_blank" href="https://vuejs.org/">
-              <img width="48" src="/icons/vue-js.svg" alt="Vue.js official logo" loading="eager">
+              <img width="48" :src="iconVue" alt="Vue.js official logo" loading="eager">
               <h4>Vue.js</h4>
               <span>Front-end implementation</span>
             </a>
           </li>
           <li><a target="_blank" href="https://vite.dev/">
-              <img width="48" src="/icons/vite.svg" alt="Vite official logo" loading="eager">
+              <img width="48" :src="iconVite" alt="Vite official logo" loading="eager">
               <h4>Vite</h4>
               <span>Build tool & bundler</span>
             </a></li>
           <li><a target="_blank" href="https://www.typescriptlang.org/">
-              <img width="48" src="/icons/typescript.svg" alt="TypeScript official logo" loading="eager">
+              <img width="48" :src="iconTypescript" alt="TypeScript official logo" loading="eager">
               <h4>TypeScript</h4>
               <span>Type checking and error prevention</span>
             </a></li>
           <li><a target="_blank" href="https://tailwindcss.com/">
-              <img width="48" src="/icons/tailwindcss.svg" alt="Tailwind official logo" loading="eager">
+              <img width="48" :src="iconTailwind" alt="Tailwind official logo" loading="eager">
               <h4>Tailwind CSS</h4>
               <span>Quick and modular CSS styling</span>
             </a></li>
@@ -36,28 +48,28 @@
         <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-5 w-full justify-around">
           <li>
             <a target="_blank" href="https://nodejs.org/">
-              <img src="/icons/nodejs.svg" width="48" alt="Node.js official logo" loading="eager">
+              <img :src="iconNode" width="48" alt="Node.js official logo" loading="eager">
               <h4>Node.js</h4>
               <span>Backend integrations and features</span>
             </a>
           </li>
           <li>
             <a target="_blank" href="https://vercel.com">
-              <img width="48" src="/icons/vercel.webp" alt="Vercel official logo" loading="eager">
+              <img width="48" :src="iconVercel" alt="Vercel official logo" loading="eager">
               <h4>Vercel</h4>
               <span>Hosting and deployment</span>
             </a>
           </li>
           <li>
             <a target="_blank" href="https://github.com">
-              <img width="48" src="/icons/github.svg" alt="" loading="eager">
+              <img width="48" :src="iconGithub" alt="" loading="eager">
               <h4>GitHub</h4>
               <span>Version control</span>
             </a>
           </li>
           <li>
             <a href="https://www.figma.com/">
-              <img width="48" src="/icons/figma.svg" alt="Figma official logo">
+              <img width="48" :src="iconFigma" alt="Figma official logo">
               <h4>Figma</h4>
               <span>Prototyping and basic asset editing</span>
             </a>

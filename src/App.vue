@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import './style.css'
-import AboutMe from './components/AboutMe.vue';
-import ContactMe from './components/ContactMe.vue';
-import HeroSection from './components/HeroSection.vue';
 import Navbar from './components/Navbar.vue';
+import HeroSection from './components/HeroSection.vue';
+import AboutMe from './components/AboutMe.vue';
 import Portfolio from './components/Portfolio.vue';
-
-
+import ContactMe from './components/ContactMe.vue';
 </script>
 
 <template>
@@ -18,5 +16,3 @@ import Portfolio from './components/Portfolio.vue';
     <ContactMe />
   </main>
 </template>
-
-<style scoped></style>

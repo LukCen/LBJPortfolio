@@ -6,9 +6,14 @@ export default defineConfig({
   plugins: [vue({
     template: {
       compilerOptions: {
-        isCustomElement: (tag) => tag.includes('swiper')
+        isCustomElement: (tag) => tag.includes('swiper'),
       }
     }
   }),
-  tailwindcss()]
+  tailwindcss()],
+  build: {
+    rollupOptions: {
+      treeshake: 'smallest'
+    }
+  }
 })
