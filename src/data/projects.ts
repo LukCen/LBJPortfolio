@@ -18,5 +18,14 @@ export const projectList: Project[] = [
     desc: "An example page for a fictional space travel company. Includes several view, paginations and routing. Includes mobile and tablet-specific views.",
     repo: "https://github.com/LukCen/LBJSpaceTravel",
     url: "https://spacetravel.vercel.app"
+  },
+  {
+    id: 2,
+    img: "/assets/imgez_mobile.webp",
+    imgDesktop: "/assets/imgez_desktop.webp",
+    title: "ImgEZ",
+    desc: "An image uploader built with Nuxt, using Vercel's blob storage. Allows user to upload their photo and then generates a download link that can be shared.",
+    repo: "https://github.com/LukCen/ImgEz",
+    url: "https://imgez.vercel.app/"
   }
 ]
