@@ -44,6 +44,7 @@
   --breakpoint-2k: 1921px;
   /* animations */
   --animate-wiggle: wiggle .5s ease-in-out infinite;
+
   @keyframes wiggle {
     0%, 100% {
       transform: rotate(-9deg);
@@ -97,4 +98,24 @@
     }
   }
 
+}
+
+
+/* GRID EXPERIMENT */
+
+.layout {
+  display: grid;
+  grid-template-columns: 
+  [full-start] minmax(0,1fr)
+  [content-start] minmax(0,1200px)
+  [content-end] minmax(0,1fr)
+  [full-end];
+
+}
+
+.full {
+  grid-column: full;
+}
+.content {
+  grid-column: content;
 }

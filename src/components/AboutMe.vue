@@ -11,7 +11,7 @@ import iconFigma from "/icons/figma.svg"
 
 </script>
 <template>
-  <section id="about-me" class="w-full bg-medium shadow-primary rounded-xl p-8 text-light" aria-label="About me">
+  <section id="about-me" class=" bg-medium shadow-primary rounded-xl p-8 text-light" aria-label="About me">
     <h2 class="section_header text-secondary text-shadow-[0px_0px_5px_var(--color-secondary)] font-bold">About me</h2>
     <div class="content flex flex-col gap-4">
       <p>I specialize in front-end develoment of websites and web apps, focusing on delivering elegant, scalable and
@@ -75,8 +75,7 @@ import iconFigma from "/icons/figma.svg"
             </a>
           </li>
         </ul>
-        <small>Icons from: <a class="text-primary font-medium hover:underline"
-            href="https://www.icons8.com">Icons8.com</a></small>
+        <small>Icons from: <a class="text-primary font-medium hover:underline" href="https://www.icons8.com">Icons8.com</a></small>
       </div>
     </div>
   </section>
