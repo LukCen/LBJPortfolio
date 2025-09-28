@@ -14,11 +14,12 @@ import iconFigma from "/icons/figma.svg"
   <section id="about-me" class=" bg-medium shadow-primary rounded-xl p-8 text-light" aria-label="About me">
     <h2 class="section_header text-secondary text-shadow-[0px_0px_5px_var(--color-secondary)] font-bold">About me</h2>
     <div class="content flex flex-col gap-4">
-      <p>I specialize in front-end develoment of websites and web apps, focusing on delivering elegant, scalable and
-        performant designs, fully compliant with modern web development practices. I'm always eager to learn new tools
-        and concepts, from programming to prototyping, and I'm always looking for ways to write better, cleaner code
-        that is
-        easier to maintain and extend.</p>
+      <p>I first got into programming around 2020 with Python, experimenting with modules like Pygame to build small games and side projects. Eventually I transitioned into web development, where I
+        completed a course and quickly began working on my own projects.
+        I’ve since made Vue my main focus — I enjoy its balance of simplicity and power, and I’ve explored its ecosystem through tools like VueUse, Lucide, and Nuxt. Along the way I’ve also
+        experimented with Electron, gained experience working with SQL databases, and become comfortable deploying projects with Vercel.
+        This mix of practice and exploration has helped me grow steadily, and I continue to build projects that push me further into modern frontend and fullstack development.</p>
+      <p></p>
       <div class="tech-stack flex flex-col gap-10">
         <h3 class="font-semibold">My tech stack :</h3>
         <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-5 w-full justify-around">
