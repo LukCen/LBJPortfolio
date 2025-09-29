@@ -9,6 +9,7 @@ import iconGithub from "/icons/github.svg"
 import iconFigma from "/icons/figma.svg"
 
 
+
 </script>
 <template>
   <section id="about-me" class=" bg-medium shadow-primary rounded-xl p-8 text-light" aria-label="About me">
@@ -19,7 +20,6 @@ import iconFigma from "/icons/figma.svg"
         I’ve since made Vue my main focus — I enjoy its balance of simplicity and power, and I’ve explored its ecosystem through tools like VueUse, Lucide, and Nuxt. Along the way I’ve also
         experimented with Electron, gained experience working with SQL databases, and become comfortable deploying projects with Vercel.
         This mix of practice and exploration has helped me grow steadily, and I continue to build projects that push me further into modern frontend and fullstack development.</p>
-      <p></p>
       <div class="tech-stack flex flex-col gap-10">
         <h3 class="font-semibold">My tech stack :</h3>
         <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-5 w-full justify-around">
@@ -81,6 +81,7 @@ import iconFigma from "/icons/figma.svg"
     </div>
   </section>
 </template>
+
 
 <style scoped>
 @reference '../style.css';
