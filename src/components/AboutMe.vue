@@ -7,7 +7,6 @@ import iconNode from "/icons/nodejs.svg"
 import iconVercel from "/icons/vercel.webp"
 import iconGithub from "/icons/github.svg"
 import iconFigma from "/icons/figma.svg"
-import { useI18n } from "vue-i18n"
 
 
 

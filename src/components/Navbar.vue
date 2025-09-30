@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useMediaQuery, useThrottleFn } from '@vueuse/core';
-import { BookOpenIcon, BriefcaseBusinessIcon, Mail, MenuIcon, User2Icon, XIcon } from 'lucide-vue-next';
+import { BookOpenIcon, Mail, MenuIcon, User2Icon, XIcon } from 'lucide-vue-next';
 import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
 
@@ -13,8 +13,7 @@ const isDesktop = useMediaQuery('(min-width: 1200px)') /* breakpoint declared in
 
 
 const { t, locale, availableLocales } = useI18n({ useScope: 'global' })
-console.log(locale.value)
-console.log(availableLocales)
+
 </script>
 
 <template>
@@ -33,17 +32,17 @@ console.log(availableLocales)
       </li>
       <li>
         <a href="#portfolio">
-          <BookOpenIcon class="nav-icon" /> {{ t('navbar.portfolio') }}
+          <BookOpenIcon class="nav-icon" />{{ t('navbar.portfolio') }}
         </a>
       </li>
-      <li><a href="#contact">
-          <Mail class="nav-icon" /> {{ t('navbar.contact') }}
+      <li>
+        <a href="#contact">
+          <Mail class="nav-icon" />{{ t('navbar.contact') }}
         </a>
       </li>
       <li>
         <select onchange=(console.log(locale)) v-model="locale">
           <option class="capitalize text-dark" v-for="value in availableLocales" :value="value">{{ value.toUpperCase() }}</option>
-
         </select>
       </li>
     </ul>
@@ -52,21 +51,16 @@ console.log(availableLocales)
       <ul>
         <li>
           <a href="#about-me" @click="menuActive = false">
-            <User2Icon class="nav-icon" :size="32" />About me
-          </a>
-        </li>
-        <li>
-          <a href="#experience" @click="menuActive = false">
-            <BriefcaseBusinessIcon class="nav-icon" :size="32" /> Experience
+            <User2Icon class="nav-icon" :size="32" />{{ t('navbar.aboutme') }}
           </a>
         </li>
         <li>
           <a href="#portfolio" @click="menuActive = false">
-            <BookOpenIcon class="nav-icon" :size="32" /> Portfolio
+            <BookOpenIcon class="nav-icon" :size="32" /> {{ t('navbar.portfolio') }}
           </a>
         </li>
         <li><a href="#contact">
-            <Mail class="nav-icon" /> Contact
+            <Mail class="nav-icon" /> {{ t('navbar.contact') }}
           </a></li>
       </ul>
     </aside>

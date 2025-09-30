@@ -14,6 +14,10 @@ const i18n = createI18n({
         aboutme: "About me",
         portfolio: "Portfolio",
         contact: "Contact"
+      },
+      hero: {
+        header: "Frontend with a passion",
+        contents: "Hey, thanks for paying me a visit! I'm Łukasz, a front-end developer from Poland."
       }
     },
     'pl': {
@@ -21,6 +25,10 @@ const i18n = createI18n({
         aboutme: "O mnie",
         portfolio: "Portfolio",
         contact: "Kontakt"
+      },
+      hero: {
+        header: "Frontend z pasją",
+        contents: "Hej, dzięki za wizytę! Jestem Łukasz, fajnie że jesteś!"
       }
     }
   }
