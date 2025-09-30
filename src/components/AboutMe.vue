@@ -7,12 +7,14 @@ import iconNode from "/icons/nodejs.svg"
 import iconVercel from "/icons/vercel.webp"
 import iconGithub from "/icons/github.svg"
 import iconFigma from "/icons/figma.svg"
+import { useI18n } from "vue-i18n"
+
 
 
 
 </script>
 <template>
-  <section id="about-me" class=" bg-medium shadow-primary rounded-xl p-8 text-light" aria-label="About me">
+  <section id="about-me" class="bg-medium shadow-primary rounded-xl p-8 text-light" aria-label="About me">
     <h2 class="section_header text-secondary text-shadow-[0px_0px_5px_var(--color-secondary)] font-bold">About me</h2>
     <div class="content flex flex-col gap-4">
       <p>I first got into programming around 2020 with Python, experimenting with modules like Pygame to build small games and side projects. Eventually I transitioned into web development, where I
@@ -81,6 +83,7 @@ import iconFigma from "/icons/figma.svg"
     </div>
   </section>
 </template>
+
 
 
 <style scoped>

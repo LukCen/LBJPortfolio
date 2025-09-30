@@ -2,6 +2,7 @@
 import { useMediaQuery, useThrottleFn } from '@vueuse/core';
 import { BookOpenIcon, BriefcaseBusinessIcon, Mail, MenuIcon, User2Icon, XIcon } from 'lucide-vue-next';
 import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
 
 const menuActive = ref(false)
 const throttleClick = useThrottleFn(() => {
@@ -9,6 +10,11 @@ const throttleClick = useThrottleFn(() => {
     , 150
 })
 const isDesktop = useMediaQuery('(min-width: 1200px)') /* breakpoint declared in style.css */
+
+
+const { t, locale, availableLocales } = useI18n({ useScope: 'global' })
+console.log(locale.value)
+console.log(availableLocales)
 </script>
 
 <template>
@@ -22,17 +28,24 @@ const isDesktop = useMediaQuery('(min-width: 1200px)') /* breakpoint declared in
     <ul v-if="isDesktop" class="flex relative right-5 gap-10">
       <li>
         <a href="#about-me">
-          <User2Icon class="nav-icon" />About me
+          <User2Icon class="nav-icon" />{{ t('navbar.aboutme') }}
         </a>
       </li>
       <li>
         <a href="#portfolio">
-          <BookOpenIcon class="nav-icon" /> Portfolio
+          <BookOpenIcon class="nav-icon" /> {{ t('navbar.portfolio') }}
         </a>
       </li>
       <li><a href="#contact">
-          <Mail class="nav-icon" /> Contact
-        </a></li>
+          <Mail class="nav-icon" /> {{ t('navbar.contact') }}
+        </a>
+      </li>
+      <li>
+        <select onchange=(console.log(locale)) v-model="locale">
+          <option class="capitalize text-dark" v-for="value in availableLocales" :value="value">{{ value.toUpperCase() }}</option>
+
+        </select>
+      </li>
     </ul>
     <!-- mobile -->
     <aside v-if="menuActive && !isDesktop">
