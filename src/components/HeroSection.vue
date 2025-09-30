@@ -3,8 +3,8 @@ import hero from "/assets/hero-mobile.webp"
 import heroTablet from "/assets/hero-tablet.webp"
 import heroDesktop from "/assets/hero-desktop.webp"
 import hero2k from "/assets/hero-2k.webp"
-import { useI18n } from "vue-i18n"
-const { t, locale, availableLocales } = useI18n({ useScope: 'global' })
+
+
 </script>
 
 <template>
@@ -18,10 +18,10 @@ const { t, locale, availableLocales } = useI18n({ useScope: 'global' })
       </picture>
       <div
         class="text flex flex-col text-center justify-between absolute bottom-0 h-1/2 tablet:top-0 tablet:h-full tablet:left-0 tablet:w-8/12 tablet:justify-around desktop:h-full desktop:top-0 desktop:left-[100px] desktop:max-w-[800px] px-4 py-4 desktop:py-10 desktop:px-0">
-        <h1 class="text-secondary tablet:text-[42px]">{{ t('hero.header') }}
+        <h1 class="text-secondary tablet:text-[42px]">{{ $t('hero.header') }}
         </h1>
         <p class="text-[24px] tablet:text-[22px] desktop:text-[38px]">
-          {{ t('hero.contents') }}</p>
+          {{ $t('hero.contents') }}</p>
       </div>
     </div>
   </section>

@@ -12,8 +12,7 @@ const throttleClick = useThrottleFn(() => {
 const isDesktop = useMediaQuery('(min-width: 1200px)') /* breakpoint declared in style.css */
 
 
-const { t, locale, availableLocales } = useI18n({ useScope: 'global' })
-
+const i18n = useI18n({ useScope: 'global' })
 </script>
 
 <template>
@@ -27,22 +26,22 @@ const { t, locale, availableLocales } = useI18n({ useScope: 'global' })
     <ul v-if="isDesktop" class="flex relative right-5 gap-10">
       <li>
         <a href="#about-me">
-          <User2Icon class="nav-icon" />{{ t('navbar.aboutme') }}
+          <User2Icon class="nav-icon" />{{ i18n.t('navbar.aboutme') }}
         </a>
       </li>
       <li>
         <a href="#portfolio">
-          <BookOpenIcon class="nav-icon" />{{ t('navbar.portfolio') }}
+          <BookOpenIcon class="nav-icon" />{{ i18n.t('navbar.portfolio') }}
         </a>
       </li>
       <li>
         <a href="#contact">
-          <Mail class="nav-icon" />{{ t('navbar.contact') }}
+          <Mail class="nav-icon" />{{ i18n.t('navbar.contact') }}
         </a>
       </li>
       <li>
-        <select onchange=(console.log(locale)) v-model="locale">
-          <option class="capitalize text-dark" v-for="value in availableLocales" :value="value">{{ value.toUpperCase() }}</option>
+        <select v-model="i18n.locale.value">
+          <option class="capitalize text-dark" :key="value" v-for="value in i18n.availableLocales" :value="value">{{ value.toUpperCase() }}</option>
         </select>
       </li>
     </ul>
@@ -51,16 +50,16 @@ const { t, locale, availableLocales } = useI18n({ useScope: 'global' })
       <ul>
         <li>
           <a href="#about-me" @click="menuActive = false">
-            <User2Icon class="nav-icon" :size="32" />{{ t('navbar.aboutme') }}
+            <User2Icon class="nav-icon" :size="32" />{{ i18n.t('navbar.aboutme') }}
           </a>
         </li>
         <li>
           <a href="#portfolio" @click="menuActive = false">
-            <BookOpenIcon class="nav-icon" :size="32" /> {{ t('navbar.portfolio') }}
+            <BookOpenIcon class="nav-icon" :size="32" /> {{ i18n.t('navbar.portfolio') }}
           </a>
         </li>
         <li><a href="#contact">
-            <Mail class="nav-icon" /> {{ t('navbar.contact') }}
+            <Mail class="nav-icon" /> {{ i18n.t('navbar.contact') }}
           </a></li>
       </ul>
     </aside>
