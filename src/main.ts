@@ -38,7 +38,8 @@ const i18n = createI18n({
       aboutme: {
         header: 'O mnie',
         contents: 'Zacząłem programować około roku 2020, zaczynając od języka Python. Moje pierwsze projekty były budowane z wykorzystaniem modułów takich jak Pygame, z pomocą którego tworzyłem niewielkie gry i inne projekty poboczne. Z czasem przeniosłem się w kierunku web devu, kończąc kurs i skupiając się na projektach wykorzystujących technologie webowe. Moim głównym narzędziem jest Vue - lubię go za połączenie prostoty i mocy oraz za bardzo przyjemny developer experience. Po drodze zagłębiłem się w jego ekosystem, korzystając z modułów takich jak Lucide, VueUse, VueRouter, Vue-I18n oraz postawiłem pierwsze kroki w SSR z wykorzystaniem frameworka Nuxt. Oprócz tego eksperymentowałem z Electronem, tworzyłem bazy danych z wykorzystaniem SQL (Postgres/Supabase) i publikowałem projekty z użyciem Vercela.'
-      }
+      },
+
     }
   }
 })
