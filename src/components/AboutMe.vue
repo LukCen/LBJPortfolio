@@ -38,7 +38,6 @@ const stack = [
             </a>
           </li>
         </ul>
-
         <small class="mx-auto">Icons from: <a class="text-secondary font-medium hover:underline" href="https://www.icons8.com">Icons8.com</a></small>
       </div>
     </div>

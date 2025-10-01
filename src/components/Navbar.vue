@@ -40,7 +40,7 @@ const i18n = useI18n({ useScope: 'global' })
         </a>
       </li>
       <li>
-        <select v-model="i18n.locale.value">
+        <select class="hidden" v-model="i18n.locale.value">
           <option class="capitalize text-dark" :key="value" v-for="value in i18n.availableLocales" :value="value">{{ value.toUpperCase() }}</option>
         </select>
       </li>
