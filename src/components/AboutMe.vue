@@ -9,6 +9,17 @@ import iconGithub from "/icons/github.svg"
 import iconFigma from "/icons/figma.svg"
 
 
+const stack = [
+  { name: 'Vue.js', url: 'https://vuejs.org', img: iconVue },
+  { name: 'Vite', url: 'https://vite.dev', img: iconVite },
+  { name: 'Typescript', url: 'https://typescriptlang.org', img: iconTypescript },
+  { name: 'Tailwind CSS', url: 'https://tailwindcss.com', img: iconTailwind },
+  { name: 'Node.js', url: 'https://nodejs.org', img: iconNode },
+  { name: 'Vercel', url: 'https://vercel.com', img: iconVercel },
+  { name: 'GitHub', url: 'https://github.com', img: iconGithub },
+  { name: 'Figma', url: 'https://figma.com', img: iconFigma }
+]
+
 
 
 </script>
@@ -19,61 +30,16 @@ import iconFigma from "/icons/figma.svg"
       <p>{{ $t('aboutme.contents') }}</p>
       <div class="tech-stack flex flex-col gap-10">
         <h3 class="font-semibold">Tech stack :</h3>
-        <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-5 w-full justify-around">
-          <li><a target="_blank" href="https://vuejs.org/">
-              <img width="48" :src="iconVue" alt="Vue.js official logo" loading="eager">
-              <h4>Vue.js</h4>
-
-            </a>
-          </li>
-          <li><a target="_blank" href="https://vite.dev/">
-              <img width="48" :src="iconVite" alt="Vite official logo" loading="eager">
-              <h4>Vite</h4>
-
-            </a></li>
-          <li><a target="_blank" href="https://www.typescriptlang.org/">
-              <img width="48" :src="iconTypescript" alt="TypeScript official logo" loading="eager">
-              <h4>TypeScript</h4>
-
-            </a></li>
-          <li><a target="_blank" href="https://tailwindcss.com/">
-              <img width="48" :src="iconTailwind" alt="Tailwind official logo" loading="eager">
-              <h4>Tailwind CSS</h4>
-
-            </a></li>
-        </ul>
-        <h3 class="font-semibold">Additional tools :</h3>
-        <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-5 w-full justify-around">
-          <li>
-            <a target="_blank" href="https://nodejs.org/">
-              <img :src="iconNode" width="48" alt="Node.js official logo" loading="eager">
-              <h4>Node.js</h4>
-
-            </a>
-          </li>
-          <li>
-            <a class="h-full" target="_blank" href="https://vercel.com">
-              <img width="48" :src="iconVercel" alt="Vercel official logo" loading="eager">
-              <h4>Vercel</h4>
-
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://github.com">
-              <img width="48" :src="iconGithub" alt="" loading="eager">
-              <h4>GitHub</h4>
-
-            </a>
-          </li>
-          <li>
-            <a href="https://www.figma.com/">
-              <img width="48" :src="iconFigma" alt="Figma official logo">
-              <h4>Figma</h4>
-
+        <ul class="grid grid-cols-2 grid-rows-2 desktop:grid-cols-4 desktop:grid-rows-1 gap-4 desktop:gap-8 w-full justify-around">
+          <li v-for="item in stack">
+            <a target="_blank" :href="item.url">
+              <img width="48" :src="item.img" alt="" loading="eager">
+              <h4>{{ item.name }}</h4>
             </a>
           </li>
         </ul>
-        <small>Icons from: <a class="text-primary font-medium hover:underline" href="https://www.icons8.com">Icons8.com</a></small>
+
+        <small class="mx-auto">Icons from: <a class="text-secondary font-medium hover:underline" href="https://www.icons8.com">Icons8.com</a></small>
       </div>
     </div>
   </section>
