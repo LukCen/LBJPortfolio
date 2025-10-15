@@ -41,24 +41,24 @@ async function sendEmail() {
 
 <template>
   <section id="contact" class="flex flex-col gap-5 bg-medium p-4 rounded-xl shadow-primary">
-    <h2 class="section_header text-secondary font-bold text-shadow-[0px_0px_20px_var(--color-secondary)]">Contact</h2>
+    <h2 class="section_header text-secondary font-bold text-shadow-[0px_0px_20px_var(--color-secondary)]">{{ $t('contact.title') }}</h2>
     <form @submit.prevent="sendEmail" class="flex flex-col gap-5">
       <!-- client email -->
       <div class="form-block flex gap-5 border-1 border-[rgba(255,255,255,0.4)] bg-dark px-4 py-4 rounded-md">
-        <label class="min-w-[100px] text-center flex justify-center items-center font-semibold" for="contact-email">Your
-          e-mail</label>
-        <input required placeholder="Type in your e-mail here, so I can get back to you!" v-model="email" class="w-full p-2 min-h-[40px] rounded-lg bg-medium border-1 border-[rgba(255,255,255,0.2)]"
-          id="contact-email" type="email">
+        <label class="min-w-[100px] text-center flex justify-center items-center font-semibold" for="contact-email">{{ $t('contact.email.label') }}</label>
+        <input required :placeholder="$t('contact.email.placeholder')" v-model="email" class="w-full p-2 min-h-[40px] rounded-lg bg-medium border-1 border-[rgba(255,255,255,0.2)]" id="contact-email"
+          type="email">
       </div>
       <!-- title -->
       <div class="form-block flex gap-5 border-1 border-[rgba(255,255,255,0.4)] bg-dark px-4 py-4 rounded-md">
-        <label class="min-w-[100px] flex justify-start items-center font-semibold" for="contact-title">Title</label>
-        <input require placeholder="Your email title." v-model="title" class="w-full p-2 min-h-[40px] rounded-lg bg-medium border-1 border-[rgba(255,255,255,0.2)]" id="contact-title" type="text">
+        <label class="min-w-[100px] flex justify-start items-center font-semibold" for="contact-title">{{ $t('contact.email_title.label') }}</label>
+        <input require :placeholder="$t('contact.email_title.placeholder')" v-model="title" class="w-full p-2 min-h-[40px] rounded-lg bg-medium border-1 border-[rgba(255,255,255,0.2)]"
+          id="contact-title" type="text">
       </div>
       <!-- message -->
       <div class="form-block flex flex-col gap-5 border-1 border-[rgba(255,255,255,0.4)] rounded-md bg-dark px-4 py-6">
-        <label for="contact-contents" class="font-semibold">Message</label>
-        <textarea required minlength="10" placeholder="Type in your message here - minimum of 10 characters is required." v-model="content" id="contact-contents"
+        <label for="contact-contents" class="font-semibold">{{ $t('contact.email_message.label') }}</label>
+        <textarea required minlength="10" :placeholder="$t('contact.email_message.placeholder')" v-model="content" id="contact-contents"
           class="w-full p-4 min-h-[40px] rounded-xl bg-medium border-1 border-[rgba(255,255,255,0.2)]" rows="10"></textarea>
       </div>
       <!-- submit -->

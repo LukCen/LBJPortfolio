@@ -45,6 +45,22 @@ const i18n = createI18n({
         {
           repo: 'Check the repo',
           demo: 'See in action'
+        },
+
+      },
+      contact: {
+        title: 'Contact',
+        email: {
+          label: 'Your e-mail',
+          placeholder: 'Type in your e-mail here, so I can get back to you!'
+        },
+        email_title: {
+          label: 'Title',
+          placeholder: 'Your email title.'
+        },
+        email_message: {
+          label: 'Content',
+          placeholder: 'Type in your message here - minimum of 10 characters is required'
         }
       }
     },
@@ -78,12 +94,27 @@ const i18n = createI18n({
             desc: projectList[2].desc_pl,
           }
         ],
-        buttons:
-        {
+        buttons: {
           repo: 'Sprawdź repozytorium',
           demo: 'Sprawdź w akcji'
-        }
+        },
 
+
+      },
+      contact: {
+        title: 'Kontakt',
+        email: {
+          label: 'Twój email',
+          placeholder: 'Wpisz tutaj swój adres e-mail, żebym mógł odpowiedzieć!'
+        },
+        email_title: {
+          label: 'Tytuł',
+          placeholder: 'Tytuł twojej wiadomości e-mail.'
+        },
+        email_message: {
+          label: 'Treść',
+          placeholder: 'Tutaj wpisz swoją wiadomość - wymagane jest minimum 10 znaków.'
+        }
       }
 
     }
