@@ -40,7 +40,12 @@ const i18n = createI18n({
             title: projectList[2].title,
             desc: projectList[2].desc,
           }
-        ]
+        ],
+        buttons:
+        {
+          repo: 'Check the repo',
+          demo: 'See in action'
+        }
       }
     },
     'pl': {
@@ -72,7 +77,13 @@ const i18n = createI18n({
             title: projectList[2].title,
             desc: projectList[2].desc_pl,
           }
-        ]
+        ],
+        buttons:
+        {
+          repo: 'Sprawdź repozytorium',
+          demo: 'Sprawdź w akcji'
+        }
+
       }
 
     }

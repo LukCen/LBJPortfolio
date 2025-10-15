@@ -18,12 +18,11 @@ import { ArrowRightCircleIcon, Code2Icon } from 'lucide-vue-next';
         </div>
         <div class="links flex gap-4 desktop:gap-8">
           <a class="px-2 desktop:px-6 py-2 w-1/2 flex gap-2 justify-center items-center bg-secondary font-bold text-medium hover:shadow-secondary duration-150 rounded-md"
-            :href="String(item.repo)"><span class="text-[.8rem] desktop:text-lg">Check the repo</span>
+            :href="String(item.repo)"><span class="text-[.8rem] desktop:text-lg">{{ $t('portfolio.buttons.repo') }}</span>
             <Code2Icon />
           </a>
           <a class="px-2 desktop:px-6 py-2 w-1/2 flex gap-2 justify-center items-center bg-primary font-bold text-medium hover:shadow-primary duration-150 rounded-md" :href="String(item.url)"><span
-              class="text-[.8rem] desktop:text-lg">See in
-              action</span>
+              class="text-[.8rem] desktop:text-lg">{{ $t('portfolio.buttons.demo') }}</span>
             <ArrowRightCircleIcon />
           </a>
         </div>
