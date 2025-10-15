@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useMediaQuery, useThrottleFn } from '@vueuse/core';
 import { BookOpenIcon, Mail, MenuIcon, User2Icon, XIcon } from 'lucide-vue-next';
-import { ref } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 const menuActive = ref(false)
@@ -11,8 +11,17 @@ const throttleClick = useThrottleFn(() => {
 })
 const isDesktop = useMediaQuery('(min-width: 1200px)') /* breakpoint declared in style.css */
 
-
 const i18n = useI18n({ useScope: 'global' })
+
+// so selected language persists through browser refreshes
+watch(() => i18n.locale.value, (newLocale) => {
+  localStorage.setItem('lang', newLocale)
+})
+
+// load the last selected locale
+onMounted(() => {
+  i18n.locale.value = localStorage.getItem('lang') ?? 'en'
+})
 </script>
 
 <template>
