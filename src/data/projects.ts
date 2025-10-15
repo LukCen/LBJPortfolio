@@ -7,6 +7,7 @@ export const projectList: Project[] = [
     imgDesktop: "/assets/whispernews_desktop.webp",
     title: "Whisper News",
     desc: "An example homepage for a news site. Includes a mobile version. I expanded the example project, adding an extra section and a footer, to make it look more filled and functional.",
+    desc_pl: "Przykład strony głównej dla strony z newsami. Zawiera wersję mobilną. Rozwinąłem nieco projekt, dodając kolejną sekcję i stopkę, by wyglądała bardziej funkcjonalnie i pełnie.",
     repo: "https://github.com/LukCen/WhisperNews",
     url: "https://whispernews-six.vercel.app/"
   },
@@ -16,6 +17,7 @@ export const projectList: Project[] = [
     imgDesktop: "/assets/spacetravel_desktop.webp",
     title: "Space Travel",
     desc: "An example page for a fictional space travel company. Includes several view, paginations and routing. Includes mobile and tablet-specific views.",
+    desc_pl: "Przykład strony dla fikcyjnej agencji podróży kosmicznych. Zawiera kilka podstron, paginację i routing. Zawiera wersję mobilną i dla tabletów.",
     repo: "https://github.com/LukCen/LBJSpaceTravel",
     url: "https://spacetravel.vercel.app"
   },
@@ -25,6 +27,7 @@ export const projectList: Project[] = [
     imgDesktop: "/assets/imgez_desktop.webp",
     title: "ImgEZ",
     desc: "An image uploader built with Nuxt, using Vercel's blob storage. Allows user to upload their photo and then generates a download link that can be shared.",
+    desc_pl: "Uploader zdjęć zbudowany z użyciem Nuxt, wykorzystująćy blob storage Vercela. Pozwala na wrzucanie zdjęć a następnie generuje link do pobrania, który można przesłać innym.",
     repo: "https://github.com/LukCen/ImgEz",
     url: "https://imgez.vercel.app/"
   }

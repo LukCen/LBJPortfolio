@@ -8,14 +8,13 @@ import { ArrowRightCircleIcon, Code2Icon } from 'lucide-vue-next';
 
 <template>
   <section id="portfolio" class="min-h-[600px] desktop:min-h-[900px] flex flex-col p-4 desktop:p-8 gap-2 desktop:gap-5 shadow-primary bg-medium overflow-hidden rounded-xl">
-    <h2 class="section_header text-secondary text-shadow-[0px_0px_5px_var(--color-secondary)] font-bold">Example
-      projects</h2>
+    <h2 class="section_header text-secondary text-shadow-[0px_0px_5px_var(--color-secondary)] font-bold">{{ $t('portfolio.title') }}</h2>
     <swiper-container autoplay-delay="5000" autoplay-disable-on-interaction="true" loop="true" pagination="true">
       <swiper-slide class="flex flex-col gap-4" v-for="item, index in projectList" :key="index" aria-label="Project information">
         <img :src="isDesktop ? item.imgDesktop : item.img" alt="Screenshot of the project" loading="lazy" class="aspect-[193/240] desktop:aspect-[1200/675]">
         <div class="text_content flex flex-col gap-5 h-full">
-          <h3 class="text-secondary font-bold text-shadow-[0px_0px_5px_var(--color-secondary)]">{{ item.title }}</h3>
-          <p class="description">{{ item.desc }}</p>
+          <h3 class="text-secondary font-bold text-shadow-[0px_0px_5px_var(--color-secondary)]">{{ $t(`portfolio.contents[${index}].title`) }}</h3>
+          <p class="description">{{ $t(`portfolio.contents[${index}].desc`) }}</p>
         </div>
         <div class="links flex gap-4 desktop:gap-8">
           <a class="px-2 desktop:px-6 py-2 w-1/2 flex gap-2 justify-center items-center bg-secondary font-bold text-medium hover:shadow-secondary duration-150 rounded-md"

@@ -15,6 +15,7 @@ export interface Project {
   imgDesktop: string,
   title: string
   desc: string
+  desc_pl: string
   repo: string
   url: string | null
 }
