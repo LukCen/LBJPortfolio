@@ -7,7 +7,7 @@ import iconNode from "/icons/nodejs.svg"
 import iconVercel from "/icons/vercel-icon-dark.svg"
 import iconGithub from "/icons/github.svg"
 import iconFigma from "/icons/figma.svg"
-
+import iconPHP from "/icons/php.webp"
 
 const stack = [
   { name: 'Vue.js', url: 'https://vuejs.org', img: iconVue },
@@ -17,7 +17,8 @@ const stack = [
   { name: 'Node.js', url: 'https://nodejs.org', img: iconNode },
   { name: 'Vercel', url: 'https://vercel.com', img: iconVercel },
   { name: 'GitHub', url: 'https://github.com', img: iconGithub },
-  { name: 'Figma', url: 'https://figma.com', img: iconFigma }
+  { name: 'Figma', url: 'https://figma.com', img: iconFigma },
+  { name: "PHP", url: 'https://php.net', img: iconPHP }
 ]
 
 
