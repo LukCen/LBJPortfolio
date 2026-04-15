@@ -98,8 +98,6 @@ const i18n = createI18n({
           repo: 'Sprawdź repozytorium',
           demo: 'Sprawdź w akcji'
         },
-
-
       },
       contact: {
         title: 'Kontakt',
@@ -121,4 +119,3 @@ const i18n = createI18n({
   }
 })
 createApp(App).use(i18n).mount('#app')
-console.log(i18n)
