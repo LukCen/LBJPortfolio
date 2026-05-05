@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection.vue';
 import AboutMe from './components/AboutMe.vue';
 import Portfolio from './components/Portfolio.vue';
 import ContactMe from './components/ContactMe.vue';
+import { Analytics } from '@vercel/analytics/vue';
 </script>
 
 <template>
@@ -17,4 +18,5 @@ import ContactMe from './components/ContactMe.vue';
       <ContactMe />
     </main>
   </div>
+  <Analytics />
 </template>
