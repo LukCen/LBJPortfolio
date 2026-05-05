@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import { register } from 'swiper/element/bundle';
-
+import { Analytics } from "@vercel/analytics/vue"
 import 'swiper/swiper-bundle.css'
 import { createI18n } from 'vue-i18n';
 import { projectList } from './data/projects';
@@ -118,4 +118,4 @@ const i18n = createI18n({
     }
   }
 })
-createApp(App).use(i18n).mount('#app')
+createApp(App).use(i18n).use(Analytics).mount('#app')
