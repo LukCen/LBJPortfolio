@@ -5,7 +5,7 @@ import HeroSection from './components/HeroSection.vue';
 import AboutMe from './components/AboutMe.vue';
 import Portfolio from './components/Portfolio.vue';
 import ContactMe from './components/ContactMe.vue';
-import { Analytics } from '@vercel/analytics/vue';
+import { Analytics } from "@vercel/analytics/vue"
 </script>
 
 <template>
@@ -13,10 +13,10 @@ import { Analytics } from '@vercel/analytics/vue';
     <Navbar class="full" />
     <HeroSection class="full" />
     <main class="content flex flex-col gap-10 mt-10">
+      <Analytics />
       <AboutMe />
       <Portfolio />
       <ContactMe />
     </main>
   </div>
-  <Analytics />
 </template>
