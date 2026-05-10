@@ -52,7 +52,7 @@ async function sendEmail() {
       <!-- title -->
       <div class="form-block flex gap-5 border-1 border-[rgba(255,255,255,0.4)] bg-dark px-4 py-4 rounded-md">
         <label class="min-w-[100px] flex justify-start items-center font-semibold" for="contact-title">{{ $t('contact.email_title.label') }}</label>
-        <input require :placeholder="$t('contact.email_title.placeholder')" v-model="title" class="w-full p-2 min-h-[40px] rounded-lg bg-medium border-1 border-[rgba(255,255,255,0.2)]"
+        <input required :placeholder="$t('contact.email_title.placeholder')" v-model="title" class="w-full p-2 min-h-[40px] rounded-lg bg-medium border-1 border-[rgba(255,255,255,0.2)]"
           id="contact-title" type="text">
       </div>
       <!-- message -->

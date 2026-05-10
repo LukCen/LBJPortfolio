@@ -67,9 +67,11 @@ onMounted(() => {
             <BookOpenIcon class="nav-icon" :size="32" /> {{ i18n.t('navbar.portfolio') }}
           </a>
         </li>
-        <li><a href="#contact">
+        <li>
+          <a href="#contact" @click="menuActive = false">
             <Mail class="nav-icon" /> {{ i18n.t('navbar.contact') }}
-          </a></li>
+          </a>
+        </li>
       </ul>
     </aside>
   </nav>

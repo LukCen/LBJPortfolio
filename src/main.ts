@@ -38,6 +38,10 @@ const i18n = createI18n({
           {
             title: projectList[2].title,
             desc: projectList[2].desc,
+          },
+          {
+            title: projectList[3].title,
+            desc: projectList[3].desc,
           }
         ],
         buttons:
@@ -91,6 +95,10 @@ const i18n = createI18n({
           {
             title: projectList[2].title,
             desc: projectList[2].desc_pl,
+          },
+          {
+            title: projectList[3].title,
+            desc: projectList[3].desc_pl,
           }
         ],
         buttons: {

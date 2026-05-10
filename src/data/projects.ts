@@ -3,6 +3,16 @@ import type { Project } from "../types/types";
 export const projectList: Project[] = [
   {
     id: 0,
+    img: '/assets/nextyper_mobile.webp',
+    imgDesktop: '/assets/nextyper_desktop.webp',
+    title: "NexTyper",
+    desc: "A typing speed game built with Next.js. Includes a hall of fame the user can add their score to after a session.",
+    desc_pl: "Gra sprawdzająca szybkość pisania, zbudowana z użyciem Next.js. Zawiera tabelę wyników do której użytkownik może dodać własny wynik po zakończonej sesji.",
+    repo: "https://github.com/LukCen/nextyper",
+    url: "https://nextyper.vercel.app"
+  },
+  {
+    id: 1,
     img: "/assets/whispernews_mobile.webp",
     imgDesktop: "/assets/whispernews_desktop.webp",
     title: "Whisper News",
@@ -13,7 +23,7 @@ export const projectList: Project[] = [
 
   },
   {
-    id: 1,
+    id: 2,
     img: "/assets/spacetravel_mobile.webp",
     imgDesktop: "/assets/spacetravel_desktop.webp",
     title: "Space Travel",
@@ -24,7 +34,7 @@ export const projectList: Project[] = [
 
   },
   {
-    id: 2,
+    id: 3,
     img: "/assets/imgez_mobile.webp",
     imgDesktop: "/assets/imgez_desktop.webp",
     title: "ImgEZ",

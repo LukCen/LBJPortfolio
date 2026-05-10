@@ -9,11 +9,11 @@ import { Analytics } from "@vercel/analytics/vue"
 </script>
 
 <template>
+  <Analytics />
   <div class="layout">
     <Navbar class="full" />
     <HeroSection class="full" />
     <main class="content flex flex-col gap-10 mt-10">
-      <Analytics />
       <AboutMe />
       <Portfolio />
       <ContactMe />
